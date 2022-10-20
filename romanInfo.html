@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/romanInfo.css">
+</head>
+
+
+<body>
+    <div id="header">
+        <h1>Roman Empire</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html" target="_self">Home</a>
+
+        <a href="pwProject.html" target="_self">Password Genie</a>
+
+        <a href="#romeo">Roman Numeral Converter</a>
+
+        <a href="#caesarlink">Caesar Cipher</a>
+
+        <a href="#pal">Palindrome Checker</a>
+
+    </div>
+    <div id="flexHead">
+
+
+
+
+    </div>
+    <p id="romeo"></p>
+    <h2>Roman Numeral Converter</h2><!-- this is all the roman numeral stuff-->
+
+    <p>What if your life depended on the conversion of a standard number to a Roman numeral? Would you want your last
+        thought to be "If I'd only had a Roman numeral converter"? Thanks to us, a Roman numeral converter that goes up
+        to 3,999 is always handy. Any higher than that and you're screwed. But let's be honest, nobody cares about Roman
+        Numerals except for when thinking about the Super Bowl. And we're only on Super Bowl 50 or so, so this converter
+        should suffice for years to come.</p>
+    <div class="romanInfo grid">
+
+        <label for="romanInput">Go ahead, give us a number to convert</label>
+        <br>
+        <br>
+        <input type="text" id="romanInput" placeholder="up to 3,999" pattern="[0-9]" maxlength="4">
+        <br>
+        <br>
+        <label>Your Roman numeral is:</label>
+        <p id="converted">Wait for it......</p>
+        <br>
+        <button type="submit" id="romButton" onclick="towns()">Click me</button>
+
+    </div><!-- all the roman numeral stuff stops her-->
+    <br>
+    <p id="caesarlink"></p>
+    <h2>Caesar Cipher</h2>
+
+    <p>Suppose you want to send some top secret info to someone. Maybe it's a recipe for pecan pie. Or maybe you know
+        Brutus is up to something. Who knows. Point is, you can do that with our Caesar Cipher. .</p>
+    <div class="romanInfo">
+        <label for="caesarEnc">Type in the message to be encrypted</label>
+        <br>
+        <br>
+        <input id="caesarEnc" type="text" placeholder="message here" pattern="[a-zA-z]" name="caesarEnc">
+        <br>
+        <br>
+        <label>Your encrypted message is:</label>
+        <p id="ciphered">Wait for it......</p>
+        <br>
+        <button type="submit" id="encrypt" onclick="startEn()">encrypt message</button>
+        <br>
+
+    </div>
+    <p>But wait! What good is an encryption method is there is no way to decrypt it. Well, we thought of that and the
+        result is our deciphererer thingy. If you recieve a message that was encrypted with our Caesar Cipher, plug it
+        in here and it'll spit out the
+        original message.</p>
+    <div class="romanInfo">
+        <label for="caesarDec">Plug in a message that has been encrypted here:</label>
+        <br>
+        <br>
+        <input id="caesarDec" type="text" placeholder="message here" name="caesarDec" pattern="[A-Za-z]">
+        <br>
+        <br>
+        <label>Your decrypted message is:</label>
+        <p id="deciphered">Wait for it......</p>
+        <br>
+        <button type="submit" id="decrypt" onclick="startDec()">decrypt message</button>
+    </div>
+    <p id="pal"></p>
+    <h2>Palindrome Checker</h2>
+    <p>Raise your hand if you like symmetry. All the Romans should have their hand raised. A quick perusal of any Roman
+        architecture will reveal their fondness for it. What is not as well known, though, is that the Roman Emporor
+        Dometian was an avid fan of palindrome puzzles and often gave speeches using only palindromes. Use our
+        palindrome checker to see if you can do the same.</p>
+    <div class="romanInfo">
+        <label for="palindrome">Plug in a message to see if it is a palindrome.</label>
+        <br>
+        <br>
+        <input id="palindrome" type="text" placeholder="text here">
+        <br>
+        <br>
+        <label for="palChecker">It is </label>
+        <p id="palChecker">true or false</p>
+        <label>that your text is a palindrome.</label>
+        <br>
+        <button type="submit" id="pal" onclick="checkPal()">Click to check</button>
+    </div>
+    <footer>Andy Winkles, est. 1977<br>Atlanta, Ga</footer>
+
+    <script src="assets/javascript/romanInfo.js"></script>
+
+</html>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/pwProject.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Password Genie</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html" target="_self">Home</a>
+        <br>
+        <a href="romanInfo.html" target="_self">Roman Empire</a>
+
+    </div>
+
+    <section class="flex borders">
+
+        <div class="image">
+            <img id="genie" src="assets/images/genie.jpg">
+        </div>
+        <h2>Would you like to use...</h2>
+        <form id="checkboxes">
+            <input type="checkbox" id="lowLetters" name="lowLetters">
+            <label for="lowLetters">lower case letters?</label>
+            <br>
+            <input type="checkbox" id="upLetters" name="upLetters">
+            <label for="upLetters">upper case letters?</label>
+            <br>
+            <input type="checkbox" id="numbers" name="numbers">
+            <label for="numbers">numbers?</label>
+            <br>
+            <input type="checkbox" id="symbols" name="symbols">
+            <label for="symbols">symbols?</label>
+            <br>
+        </form>
+        <br>
+        <label class="inputStuff">Choose a length between 8 and 128 characters</label>
+        <br>
+        <input class="inputStuff" type="number" id="howLong" name="howLong" placeholder="between 8 and 128" min="8"
+            max="128">
+        <p id="pwMessage">Your random password is:</p>
+        <p id="password"></p>
+        <br>
+        <button type="submit" id="button" onclick="initiateGenie()">Click for password</button>
+
+        <footer>***Please store your password in a secure location***</footer>
+
+
+    </section>
+    <footer>Andy Winkles, est. 1977<br>Atlanta, Ga</footer>
+</body>
+<script src="assets/javascript/pwProject.js"></script>
+
+</html>
+</body>
+
+</html>

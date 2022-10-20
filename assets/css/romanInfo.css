@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(153, 188, 252);
+    
+}
+#header {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    position:sticky;
+    top:0;
+    text-align: center;
+    margin:  auto;
+    padding: 2% 25%;
+    background-color: rgb(153, 188, 252);
+}
+
+#flexHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+h1 {
+    
+    font-family:papyrus;
+    text-decoration: underline;
+    align-self: center;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0.5px;
+    background-color: rgb(202, 217, 248);
+    width:45%;
+    margin: 2% auto;
+    padding:3%;
+    text-align: center;
+}
+h2{
+    
+    
+    text-align: center;
+    text-decoration: underline;
+}
+
+p{
+    width:55%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em; 
+    padding: 3%;
+}
+input{
+    text-align: center;
+}
+
+.romanInfo{
+    
+    background-color: rgb(202, 217, 248);
+    width: 55%;
+    margin: 2% auto ;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(0, 0, 0);
+    padding:2%;
+    border-style: solid;
+    border-width: .5px;
+    border-radius: 15px;  
+}
+#converted,#ciphered,#deciphered,#palChecker{
+    width:35%;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 7px;
+    background-color: white;
+    color: rgb(0, 0, 80);
+    overflow-wrap: break-word;
+    font-size: 1em;
+    margin: 2% auto;
+}
+
+footer{
+    margin: 5% auto;
+    text-align: center;
+   
+}
